@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 // import { Link } from 'react-router-dom';
 import './../../public/styles.css'
 
@@ -6,11 +6,34 @@ import './../../public/styles.css'
 import { FaHome, FaUser, FaCode } from 'react-icons/fa';
 
 export const Menu: React.FC = () => {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPosition = window.scrollY;
+
+      if (totalHeight === 0) {
+        setScrollProgress(0);
+      } else {
+        setScrollProgress((scrollPosition / totalHeight) * 100);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container flex justify-between items-center">
+    <nav className="bg-gray-800 flex flex-1 w-full h-16 sticky top-0">
+      <div className="container flex justify-between items-center h-16">
         {/* Navigation Links */}
-        <ul className="flex space-x-4">
+        <div className="absolute top-0 left-0 h-1 bg-blue-400" style={{ width: `${scrollProgress}%` }} />
+
+        <ul className="flex space-x-4 z-10 relative">
           <li>
             <a href="/" className="text-white hover:text-gray-300 flex items-center">
               <FaHome className="mr-2" />
@@ -31,9 +54,9 @@ export const Menu: React.FC = () => {
           </li>
           {/* Add more links as needed */}
         </ul>
-          <a href="/" className="text-white text-lg font-bold italic">
+          {/* <a href="/" className="text-white text-lg font-bold italic">
             Your Logo
-          </a>
+          </a> */}
       </div>
     </nav>
   );

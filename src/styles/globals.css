@@ -18,7 +18,7 @@
 }
 
 body {
-  font-size: large;
+  font-size: medium;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -26,6 +26,14 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+ /* if screen is large, make font bigger in above */
+
+@media (min-width: 768px) {
+  body {
+    font-size: large;
+  }
 }
 
 @keyframes gradient-expand {
