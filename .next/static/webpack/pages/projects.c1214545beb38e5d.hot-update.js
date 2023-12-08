@@ -1,0 +1,22 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("pages/projects",{
+
+/***/ "./src/json/projects.json":
+/*!********************************!*\
+  !*** ./src/json/projects.json ***!
+  \********************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+module.exports = JSON.parse('[{"title":"Portfolio","imgSrc":"/images/temp.jpg","duration":"Tech stack","monthFrom":"From March 2022","monthTo":"Now","description":"My portfolio.","summary":"","stringRepetitions":["My experience,","My journey,"],"viewed":false,"techStack":["TypeScript/JavaScript","Node.js","React (Next.js)","PHP","Symfony","MySQL","C#","Blazor"],"stackColors":["bg-red","bg-yellow","bg-green","bg-blue","bg-indigo","bg-purple","bg-pink","bg-gray"]},{"title":"TypeScript Project","imgSrc":"/images/temp.jpg","duration":"1 month","monthFrom":"2020-01","monthTo":"2020-02","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae felis dictum, placerat neque quis, elementum orci. Suspendisse ultrices risus et ligula auctor porta. Sed eget fringilla orci. Sed felis arcu, luctus a magna vel, cursus posuere orci. Donec sodales ex sed nisi vestibulum semper. Integer at aliquet eros, nec efficitur orci. Aenean sed odio nunc. Praesent non urna auctor, venenatis purus sit amet, gravida nibh.\\nSuspendisse potenti. Pellentesque eget diam molestie, consequat turpis vel, feugiat velit. Sed mollis, eros ut finibus vulputate, odio odio hendrerit libero, non dignissim sem velit sit amet enim. Cras sed libero vel nulla commodo pulvinar quis at leo. Sed congue sapien ut felis rutrum fermentum rhoncus id massa. Sed felis leo, lobortis id mi ut, ullamcorper feugiat magna. Morbi nec lorem porttitor, fringilla tortor eget, malesuada nulla. Ut fermentum sodales ex, vitae cursus quam malesuada quis.\\nDuis imperdiet ipsum a quam elementum commodo. Maecenas laoreet enim id egestas vulputate. Donec lacinia purus non dictum mattis. Nunc nunc orci, volutpat nec auctor et, vehicula nec diam. Cras condimentum augue ac mauris commodo eleifend. Mauris eu risus nec nibh finibus volutpat in at massa. Maecenas congue bibendum augue.\\nMauris quis pretium tellus, a hendrerit elit. Vestibulum tincidunt elit nec nibh finibus, porttitor tristique purus scelerisque. Nam mollis blandit metus, eget tincidunt purus tristique sit amet. Donec pulvinar metus libero, sed posuere orci eleifend non. Vivamus a nisl et elit pretium malesuada nec at enim. Sed id commodo erat, non convallis urna. Maecenas placerat diam mattis sem condimentum, vitae convallis risus mollis. Donec convallis, magna eu imperdiet malesuada, nisl odio vestibulum dui, eu facilisis ante ligula vel massa. Donec at sodales massa, vel suscipit sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;\\nMorbi ultricies placerat tempor. Suspendisse et nibh et ligula pharetra porttitor sit amet eget augue. Etiam mauris nulla, tincidunt eget cursus eget, sagittis et orci. Curabitur vitae iaculis elit. Mauris pharetra ullamcorper aliquam. Ut quis ultricies ex. Nunc posuere erat sit amet vestibulum faucibus. Vestibulum massa mi, egestas vel ex nec, luctus malesuada quam. Cras suscipit ut nisi sit amet molestie.","summary":"Another brief summary of what was done","stringRepetitions":[],"viewed":false,"techStack":["TypeScript/JavaScript","Node.js"],"stackColors":["bg-red","bg-yellow"]},{"title":"TypeScript Project","imgSrc":"/images/temp.jpg","duration":"1 month","monthFrom":"2020-01","monthTo":"2020-02","description":"This is a cool project.","summary":"Another brief summary of what was done","stringRepetitions":[],"viewed":false,"techStack":["TypeScript/JavaScript","Node.js"],"stackColors":["bg-red","bg-yellow"]}]');
+
+/***/ })
+
+});

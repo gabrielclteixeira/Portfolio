@@ -6,32 +6,12 @@ import './../../public/styles.css'
 import { FaHome, FaUser, FaCode } from 'react-icons/fa';
 
 export const Menu: React.FC = () => {
-  const [scrollProgress, setScrollProgress] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const totalHeight = document.body.scrollHeight - window.innerHeight;
-      const scrollPosition = window.scrollY;
-
-      if (totalHeight === 0) {
-        setScrollProgress(0);
-      } else {
-        setScrollProgress((scrollPosition / totalHeight) * 100);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
-    <nav className="bg-gray-800 flex flex-1 w-full h-16 sticky top-0">
+    <nav className="bg-gray-800 flex flex-1 w-full h-16 top-0">
       <div className="container flex justify-between items-center h-16">
         {/* Navigation Links */}
-        <div className="absolute top-0 left-0 h-1 bg-blue-400" style={{ width: `${scrollProgress}%` }} />
 
         <ul className="flex space-x-4 z-10 relative">
           <li>
